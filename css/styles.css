@@ -13,7 +13,20 @@
     --adress-footer-color: rgba( 255, 255, 255, 0.6 ); 
     --main-white-color: #FFFFFF;
 }
+html {
+    box-sizing: border-box;
+}
 
+* ,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+h1 ,h2, h3, h4, h5, p, ul {
+margin-top: 0px;
+margin-bottom: 0px;
+}
 .list {
     list-style: none;
 }
@@ -65,6 +78,8 @@ color: var(--accent-color);
 }
 /* hero */
 .hero-title{
+    display: inline-block;
+
     color: #FFFFFF;
 
     text-align: center;
@@ -74,6 +89,13 @@ color: var(--accent-color);
     font-weight: 900;
     line-height: 1.36;
     letter-spacing: 2.64px; 
+
+    margin-top: 200px;
+    margin-bottom: 30px;
+    margin-left: 452px;
+    margin-right: 452px;
+
+    width: 696px;
 }
 .hero{
     background-color: #2F303A;
@@ -134,6 +156,8 @@ color: #FFFFFF;
 }
 /* button */
 .button{
+    display: inline-block;
+
     color: #212121;
     background-color: #FFFFFF;
 
@@ -142,6 +166,16 @@ color: #FFFFFF;
     font-weight: 700;
     line-height: 1.9;
     letter-spacing: 0.96px;
+    
+    border-radius: 4px ;
+    padding: 10px 32px;
+
+    margin: 350px 692px 200px ;
+
+    min-width: 216px;
+    height: 50px;
+
+    white-space: nowrap;
 }
 .button.primary{
     color: #FFFFFF;
@@ -176,3 +210,12 @@ color: #FFFFFF;
 .portfolio .portfolio-page {
     color: var(--main-color);
 }
+ /* container */
+ .conteiner{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    outline: 2px solid tomato;
+    padding-left: 15px;
+    padding-right: 15px;
+ }

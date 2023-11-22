@@ -8,16 +8,23 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
       <!-- site nav -->
-      <nav>
+
+      <nav class="conteiner">
         <a class="logo link" href=""
           >Web<span class="header-logo">Studio</span></a
         >
-
         <ul class="site-nav list">
           <li><a href="./index.html" class="link">Студия</a></li>
           <li>
@@ -28,55 +35,64 @@
           <li><a href="#" class="link">Контакты</a></li>
         </ul>
       </nav>
-      <ul class="auth-nav list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li><a href="tel:380961111111" class="link">+38 096 111 11 11</a></li>
-      </ul>
+      <div class="conteiner">
+        <ul class="auth-nav list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li><a href="tel:380961111111" class="link">+38 096 111 11 11</a></li>
+        </ul>
+      </div>
     </header>
     <main>
       <!-- Hero -->
-      <section class="hero">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="button primary">Замовити послугу</button>
-      </section>
+      
+        <section class="hero ">
+          <div class="conteiner"> 
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="button primary">Замовити послугу</button>
+        </div>
+        </section>
+      
       <!--Особенности -->
       <section class="features">
-        <h2 hidden>Особенности</h2>
-        <ul class="list">
-          <li>
-            <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="page">
-              Ідейні міркування, і навіть початок повсякденної роботи з
-              формування позиції.
-            </p>
-          </li>
-          <li>
-            <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="page">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне
-              у себе.
-            </p>
-          </li>
-          <li>
-            <h3 class="title">ПЛАНУВАННЯ</h3>
-            <p class="page">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li>
-            <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="page">
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
-            </p>
-          </li>
-        </ul>
+        <div class="conteiner">
+          <h2 hidden>Особенности</h2>
+          <ul class="list">
+            <li>
+              <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="page">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li>
+              <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="page">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li>
+              <h3 class="title">ПЛАНУВАННЯ</h3>
+              <p class="page">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li>
+              <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="page">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="section">
+        <div class="conteiner">
         <h2 class="section-title">Чим ми займаємося</h2>
         <ul class="list">
           <li>
@@ -97,9 +113,13 @@
             />
           </li>
         </ul>
+      </div>
       </section>
       <!--Наша команда -->
       <section class="section">
+       
+
+       <div class="conteiner"> 
         <h2 class="section-title">Наша команда</h2>
         <ul class="list">
           <li>
@@ -123,6 +143,7 @@
             <p class="section-title-descrirtion">UI Designer</p>
           </li>
         </ul>
+       </div>
       </section>
     </main>
     <footer class="footer">
